@@ -1,6 +1,6 @@
 #pragma once
 
-#include "string"
+#include <string>
 
 using namespace Platform;
 
@@ -9,7 +9,7 @@ class tasksObserver
 {
 private:
 	DWORD aProcesses[1024];
-	int pos;
+	int cProcesses;
 	HANDLE threadHandler;
 	DWORD threadId;
 
@@ -20,8 +20,8 @@ public:
 	int GetPCount();
 
 	void ClearPIDs();
-	void SetPID( DWORD pID);
+	void ScanProcesses();
 
-	String^ GetPName(int tPos);
+	void GetPName(int tPos, wchar_t* lpwchar);
 };
 

@@ -1,19 +1,19 @@
 #include "pch.h"
 #include "tasksObserver.h"
-
 #include <windows.h>
+#define PSAPI_VERSION 2
 #include <psapi.h>
+#include <string>
 
 DWORD WINAPI scanRuningTasksThread(LPVOID lpParam);
 
 DWORD WINAPI scanRuningTasksThread(LPVOID lpParam)
 {
 	tasksObserver* handler = (tasksObserver*)lpParam;
-	int TaskID = 0;
+	unsigned int TaskID = 12000;
 	while (1)
 	{
-		handler->SetFirstTask("Task(" + TaskID + ")");
-		TaskID++;
+		handler->ScanProcesses();
 		Sleep(500);
 	}
 	return 0;
@@ -30,56 +30,49 @@ tasksObserver::tasksObserver()
 		0,
 		&threadId);
 }
-
 tasksObserver::~tasksObserver()
 {
-
+	/*nothing to do*/
 }
 
 int tasksObserver::GetPCount()
 {
-	return pos;
+	return this->cProcesses;
 }
 void tasksObserver::ClearPIDs()
 {
-	for (; pos > 0; pos--)
-	{
-		aProcesses[pos] = 0;
-	}
-	aProcesses[pos] = 0;
+	memset((void*)(this->aProcesses), 0, this->cProcesses);
+	this->cProcesses = 0;
 }
 
-void tasksObserver::SetPID( DWORD pID)
+void tasksObserver::ScanProcesses()
 {
-	if (pos < (sizeof(aProcesses) / sizeof(aProcesses[0])) )
+	DWORD cbNeeded;
+	/*Get Process IDs*/
+	if (!EnumProcesses(this->aProcesses, sizeof(this->aProcesses), &cbNeeded))
 	{
-		aProcesses[pos] = pID;
-		pos++;
+		/*Error -> Clear Handler*/
+		this->ClearPIDs();
 	}
+	this->cProcesses = cbNeeded / sizeof(DWORD);
 }
 
-String^ tasksObserver::GetPName(int tPos)
+void tasksObserver::GetPName(int tPos, wchar_t * lpwchar)
 {
-	TCHAR szProcessName[MAX_PATH] = TEXT("<unknown>");
-	String^ output;
-	if (tPos < pos)
+	wchar_t szProcessName[MAX_PATH] = TEXT("<unknown>");
+	if (tPos < this->cProcesses)
 	{
 		HANDLE hProc = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, aProcesses[tPos]);
 		if (hProc != NULL)
 		{
-
 			HMODULE hMod;
 			DWORD cbNeeded;
-
-			if ( EnumProcessModules( aProcesses[tPos], &hMod, sizeof(hMod), 
-				 &cbNeeded) )
-			{
-				GetModuleBaseName(aProcesses[tPos], hMod, szProcessName,
+			///if ( EnumProcessModules( hProc, &hMod, sizeof(hMod), &cbNeeded) )
+			///{
+				GetModuleBaseNameW( hProc, NULL, szProcessName,
 								   sizeof(szProcessName)/sizeof(TCHAR) );
-			}
+			///}
 		}
 	}
-	output = toString(szProcessName);
-	return output;
+	wmemcpy( lpwchar, (const wchar_t *)szProcessName, sizeof(szProcessName) );
 }
-

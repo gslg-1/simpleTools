@@ -1,6 +1,8 @@
 ﻿  App.xaml.cpp
   MainPage.xaml.cpp
   tasksObserver.cpp
+D:\git_wspace\cpp\simpleTools\cppSimpleTools\tasksObserver.cpp(69,10): warning C4101: 'cbNeeded': unreferenced local variable
+D:\git_wspace\cpp\simpleTools\cppSimpleTools\tasksObserver.cpp(68,12): warning C4101: 'hMod': unreferenced local variable
   XamlTypeInfo.g.cpp
      Creating library D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.lib and object D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.exp
   cppSimpleTools.vcxproj -> D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.exe

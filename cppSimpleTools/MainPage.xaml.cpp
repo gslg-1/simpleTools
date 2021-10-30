@@ -42,6 +42,7 @@ void cppSimpleTools::MainPage::TextBlock_SelectionChanged(Platform::Object^ send
 
 void cppSimpleTools::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	String^ firstTask = tObs->GetFirstTask();
-	this->DebugOutput->Text = firstTask;
+	wchar_t output[MAX_PATH];
+	tObs->GetPName(0, output);
+	this->DebugOutput->Text = ref new Platform::String(output);
 }

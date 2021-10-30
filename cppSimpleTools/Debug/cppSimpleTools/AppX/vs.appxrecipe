@@ -35,7 +35,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.exe">
       <PackagePath>cppSimpleTools.exe</PackagePath>
-      <Modified>2021-10-25T20:41:07.464</Modified>
+      <Modified>2021-10-30T15:37:33.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.winmd">
       <PackagePath>cppSimpleTools.winmd</PackagePath>
@@ -77,11 +77,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-10-25T20:41:04.368</Modified>
+      <Modified>2021-10-30T15:37:30.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-10-25T20:41:04.368</Modified>
+      <Modified>2021-10-30T15:37:30.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
