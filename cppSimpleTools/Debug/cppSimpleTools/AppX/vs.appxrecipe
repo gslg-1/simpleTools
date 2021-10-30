@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-F6OBM4R</Machine>
+    <WindowsUser>gabri</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|Win32</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>49f674b7-9ea9-4825-a1fe-e65acef02830</PackageIdentityName>
+    <PackageIdentityPublisher>CN=gabri</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\AppX</LayoutDir>
+    <RegisteredManifestChecksum>CE682BBD5F15BDA5FBE84411891886DA9B4329FF9B82AE5D7FF6494ECFCCAD87</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>49f674b7-9ea9-4825-a1fe-e65acef02830_1.0.0.0_x86__03w1eqkrn0fpt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>49f674b7-9ea9-4825-a1fe-e65acef02830_03w1eqkrn0fpt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>49f674b7-9ea9-4825-a1fe-e65acef02830</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=gabri</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-10-25T19:54:09.200</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.exe">
+      <PackagePath>cppSimpleTools.exe</PackagePath>
+      <Modified>2021-10-25T20:41:07.464</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.winmd">
+      <PackagePath>cppSimpleTools.winmd</PackagePath>
+      <Modified>2021-10-23T23:58:15.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2021-10-23T22:44:32.045</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-10-23T22:44:32.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-10-23T22:44:32.055</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-10-23T22:44:32.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-10-23T22:44:32.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-10-23T22:44:32.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-10-23T22:44:32.063</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2021-10-25T20:41:04.368</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2021-10-25T20:41:04.368</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2020-12-02T02:59:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2021-10-25T19:54:09.101</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30035.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

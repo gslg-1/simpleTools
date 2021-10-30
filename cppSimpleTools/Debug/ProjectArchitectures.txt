@@ -1,0 +1,1 @@
+D:\git_wspace\cpp\simpleTools\cppSimpleTools\cppSimpleTools.vcxproj;x86

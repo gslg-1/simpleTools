@@ -1,0 +1,6 @@
+﻿  App.xaml.cpp
+  MainPage.xaml.cpp
+  tasksObserver.cpp
+  XamlTypeInfo.g.cpp
+     Creating library D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.lib and object D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.exp
+  cppSimpleTools.vcxproj -> D:\git_wspace\cpp\simpleTools\cppSimpleTools\Debug\cppSimpleTools\cppSimpleTools.exe
